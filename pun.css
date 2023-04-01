@@ -1,0 +1,246 @@
+  /* Typography (heading) */
+  @font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n6.e2fdd168541a5add2d1a8d6f2b89b09c9c9e690d.woff2?h1=c3NzcG9ydHN1cHBsaWVzLmNvLnVr&h2=c3Mtc3BvcnQtc3VwcGxpZXMuYWNjb3VudC5teXNob3BpZnkuY29t&hmac=62d5fddc8ec41f47b5868407daf1d8e48a70ef53fb20283e959b86c1eca744e7") format("woff2"),
+       url("poppins/poppins_n6.6d62d2d0f11a9ff578d200ad2154f9860db165c1.woff") format("woff");
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: url("poppins/poppins_i6.672e5321078e70c7e1abdba4d92995c37fb35eae.woff") format("woff2"),
+       url("poppins/poppins_i6.b932b853e07d22eecd5ccfe6f9e0137b21b64d5b.woff") format("woff");
+}
+/* Typography (body) */
+  @font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n4.934accbf9f5987aa89334210e6c1e9151f37d3b6.woff2?h1=c3NzcG9ydHN1cHBsaWVzLmNvLnVr&h2=c3Mtc3BvcnQtc3VwcGxpZXMuYWNjb3VudC5teXNob3BpZnkuY29t&hmac=8975ea5912a30caebc5e6237fe4c3aff9046008c1a3c801cda6ab8caa890f45f") format("woff2"),
+       url("poppins/poppins_n4.ee28d4489eaf5de9cf6e17e696991b5e9148c716.woff") format("woff");
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("poppins/poppins_i4.a7e8d886e15d5fb9bc964a53b3278effbf270e9c.woff") format("woff2"),
+       url("poppins/poppins_i4.e87de252199e27825a41bf81646996685d86452d.woff") format("woff");
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n6.e2fdd168541a5add2d1a8d6f2b89b09c9c9e690d.woff2?h1=c3NzcG9ydHN1cHBsaWVzLmNvLnVr&h2=c3Mtc3BvcnQtc3VwcGxpZXMuYWNjb3VudC5teXNob3BpZnkuY29t&hmac=62d5fddc8ec41f47b5868407daf1d8e48a70ef53fb20283e959b86c1eca744e7") format("woff2"),
+       url("poppins/poppins_n6.6d62d2d0f11a9ff578d200ad2154f9860db165c1.woff") format("woff");
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: url("poppins/poppins_i6.672e5321078e70c7e1abdba4d92995c37fb35eae.woff") format("woff2"),
+       url("poppins/poppins_i6.b932b853e07d22eecd5ccfe6f9e0137b21b64d5b.woff") format("woff");
+}
+:root {--heading-color: 35, 35, 64;
+    --text-color: 93, 105, 111;
+    --background: 255, 255, 255;
+    --secondary-background: 245, 245, 245;
+    --border_color-hex: #e7e9e9;
+    --border-color: 231, 233, 233;
+    --border-color-darker: 190, 195, 197;
+    --success-color: 46, 158, 123;
+    --success-background: 213, 236, 229;
+    --error-color: 222, 42, 42;
+    --error-background: 253, 240, 240;
+    --primary-button-background: 227, 122, 96;
+    --primary-button-text-color: 255, 255, 255;
+    --secondary-button-background: 35, 35, 64;
+    --secondary-button-text-color: 255, 255, 255;
+    --product-star-rating: 246, 164, 41;
+    --product-on-sale-accent: 227, 96, 96;
+    --product-sold-out-accent: 111, 113, 155;
+    --product-custom-label-background: 64, 93, 230;
+    --product-custom-label-text-color: 255, 255, 255;
+    --product-custom-label-2-background: 243, 255, 52;
+    --product-custom-label-2-text-color: 0, 0, 0;
+    --product-low-stock-text-color: 222, 42, 42;
+    --product-in-stock-text-color: 46, 158, 123;
+    --loading-bar-background: 93, 105, 111;
+    /* We duplicate some "base" colors as root colors, which is useful to use on drawer elements or popover without. Those should not be overridden to avoid issues */
+    --root-heading-color: 35, 35, 64;
+    --root-text-color: 93, 105, 111;
+    --root-background: 255, 255, 255;
+    --root-border-color: 231, 233, 233;
+    --root-primary-button-background: 227, 122, 96;
+    --root-primary-button-text-color: 255, 255, 255;
+    --base-font-size: 15px;
+    --heading-font-family: Poppins, sans-serif;
+    --heading-font-weight: 600;
+    --heading-font-style: normal;
+    --heading-text-transform: normal;
+    --text-font-family: Poppins, sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --text-font-bold-weight: 600;
+    /* Typography (font size) */
+    --heading-xxsmall-font-size: 10px;
+    --heading-xsmall-font-size: 10px;
+    --heading-small-font-size: 11px;
+    --heading-large-font-size: 32px;
+    --heading-h1-font-size: 32px;
+    --heading-h2-font-size: 28px;
+    --heading-h3-font-size: 26px;
+    --heading-h4-font-size: 22px;
+    --heading-h5-font-size: 18px;
+    --heading-h6-font-size: 16px;
+    /* Control the look and feel of the theme by changing radius of various elements */
+    --button-border-radius: 0px;
+    --block-border-radius: 0px;
+    --block-border-radius-reduced: 0px;
+    --color-swatch-border-radius: 0px;
+    /* Button size */
+    --button-height: 48px;
+    --button-small-height: 40px;
+    /* Form related */
+    --form-input-field-height: 48px;
+    --form-input-gap: 16px;
+    --form-submit-margin: 24px;
+    /* Product listing related variables */
+    --product-list-block-spacing: 32px;
+    /* Video related */
+    --play-button-background: 255, 255, 255;
+    --play-button-arrow: 93, 105, 111;
+    /* RTL support */
+    --transform-logical-flip: 1;
+    --transform-origin-start: left;
+    --transform-origin-end: right;
+    /* Other */
+    --zoom-cursor-svg-url: url(css/zoom-cursor.svg);
+    --arrow-right-svg-url: url(css/arrow-right.svg);
+    --arrow-left-svg-url: url(css/arrow-left.svg);
+    /* Some useful variables that we can reuse in our CSS. Some explanation are needed for some of them:
+       - container-max-width-minus-gutters: represents the container max width without the edge gutters
+       - container-outer-width: considering the screen width, represent all the space outside the container
+       - container-outer-margin: same as container-outer-width but get set to 0 inside a container
+       - container-inner-width: the effective space inside the container (minus gutters)
+       - grid-column-width: represents the width of a single column of the grid
+       - vertical-breather: this is a variable that defines the global "spacing" between sections, and inside the section
+                            to create some "breath" and minimum spacing
+     */
+    --container-max-width: 1600px;
+    --container-gutter: 24px;
+    --container-max-width-minus-gutters: calc(var(--container-max-width) - (var(--container-gutter)) * 2);
+    --container-outer-width: max(calc((100vw - var(--container-max-width-minus-gutters)) / 2), var(--container-gutter));
+    --container-outer-margin: var(--container-outer-width);
+    --container-inner-width: calc(100vw - var(--container-outer-width) * 2);
+    --grid-column-count: 10;
+    --grid-gap: 24px;
+    --grid-column-width: calc((100vw - var(--container-outer-width) * 2 - var(--grid-gap) * (var(--grid-column-count) - 1)) / var(--grid-column-count));
+    --vertical-breather: 48px;
+    --vertical-breather-tight: 48px;
+    /* Shopify related variables */
+    --payment-terms-background-color: #ffffff;
+  }
+  @media screen and (min-width: 741px) {
+    :root {
+      --container-gutter: 40px;
+      --grid-column-count: 20;
+      --vertical-breather: 64px;
+      --vertical-breather-tight: 64px;
+      /* Typography (font size) */
+      --heading-xsmall-font-size: 11px;
+      --heading-small-font-size: 12px;
+      --heading-large-font-size: 48px;
+      --heading-h1-font-size: 48px;
+      --heading-h2-font-size: 36px;
+      --heading-h3-font-size: 30px;
+      --heading-h4-font-size: 22px;
+      --heading-h5-font-size: 18px;
+      --heading-h6-font-size: 16px;
+      /* Form related */
+      --form-input-field-height: 52px;
+      --form-submit-margin: 32px;
+      /* Button size */
+      --button-height: 52px;
+      --button-small-height: 44px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    :root {
+      --vertical-breather: 80px;
+      --vertical-breather-tight: 64px;
+      --product-list-block-spacing: 48px;
+      /* Typography */
+      --heading-large-font-size: 58px;
+      --heading-h1-font-size: 50px;
+      --heading-h2-font-size: 44px;
+      --heading-h3-font-size: 32px;
+      --heading-h4-font-size: 26px;
+      --heading-h5-font-size: 22px;
+      --heading-h6-font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    :root {
+      --vertical-breather: 90px;
+      --vertical-breather-tight: 64px;
+    }
+  }
+   :root {
+    --enable-sticky-header: 1;
+    --enable-transparent-header: 0;
+    --loading-bar-background: 40, 40, 40; /* Prevent the loading bar to be invisible */
+  }
+  #shopify-section-header {--header-background: 255, 255, 255;
+    --header-text-color: 40, 40, 40;
+    --header-border-color: 223, 223, 223;
+    --reduce-header-padding: 0;position: -webkit-sticky;
+      position: sticky;top: calc(var(--enable-sticky-announcement-bar) * var(--announcement-bar-height, 0px));
+    z-index: 4;
+  }#shopify-section-header .header__logo-image {
+    max-width: 170px;
+  }
+  @media screen and (min-width: 741px) {
+    #shopify-section-header .header__logo-image {
+      max-width: 245px;
+    }
+  }
+  @media screen and (min-width: 1200px) {/* For this navigation we have to move the logo and make sure the navigation takes the whole width */
+      .header__logo {
+        order: -1;
+        flex: 1 1 0;
+      }
+      .header__inline-navigation {
+        flex: 1 1 auto;
+        justify-content: center;
+        max-width: max-content;
+        margin-inline: 48px;
+      }}
+	    #shopify-section-template--15761129537688__21bbbf06-dcde-4fbb-9569-6fb890325349 {--heading-color: 35, 35, 64;
+    --text-color: 93, 105, 111;
+    --primary-button-background: 227, 122, 96;
+    --primary-button-text-color: 255, 255, 255;
+    --section-background: 245, 241, 236;
+    --section-gradient-background: #f5f1ec;
+  }
+  #shopify-section-template--15761129537688__daa41054-e977-4e45-8be2-226ee4be0e2a {--heading-color: 35, 35, 64;
+    --text-color: 93, 105, 111;
+    --primary-button-background: 227, 122, 96;
+    --primary-button-text-color: 255, 255, 255;
+    --section-accent-background: 245 241 236 / 1.0;
+    --section-gradient-background: linear-gradient(106.19deg, rgba(235, 241, 246, 1) 24.76%, rgba(247, 240, 231, 1) 77.12%);
+    --section-autoplay-duration: 5s;
+    --section-animation-play-state: paused;
+  }
+   @media screen and (min-width: 1000px) {
+    #shopify-section-template--15761129537688__daa41054-e977-4e45-8be2-226ee4be0e2a .h3 {
+        font-size: 50px;
+    }
+  }
